@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="dark" lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="./tailwind.config.js"></script>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <title>NEURAL OS | AI Integration</title>
+</head>
+<body class="antialiased overflow-x-hidden bg-background text-on-surface">
+  <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#101319]/60 no-border tonal-shift-surface-container-low shadow-[0_8px_32px_rgba(0,229,255,0.05)]">
+    <div class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+      <a href="index.html" class="flex items-center gap-2">
+         <span class="text-xl font-bold tracking-tighter text-[#c3f5ff] font-['Space_Grotesk']">Дигитален Архитект</span>
+      </a>
+      <div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] font-bold tracking-tight" data-desktop-nav>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html">Начало</a>
+        <a class="text-[#00E5FF] font-bold transition-colors duration-300" href="projects.html">Проекти</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="services.html">Услуги</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html#contact">Контакти</a>
+      </div>
+      <button class="md:hidden material-symbols-outlined text-[#00E5FF] scale-95 duration-200 ease-in-out" data-icon="menu" data-mobile-menu-button aria-label="Отвори меню" aria-expanded="false" type="button">menu</button>
+    </div>
+  </nav>
+
+  <header class="relative min-h-[76vh] pt-28 pb-14 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center neural-os-hero-bg"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#07111acc]/40 via-[#0b1622]/80 to-[#0a1119]"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto mt-20">
+      <span class="inline-block py-2 px-5 rounded-full bg-[#171b21]/95 text-[#00E5FF] text-xs tracking-[0.26em] uppercase border border-[#00E5FF]/15 mb-6">AI Integration Case Study</span>
+      <h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tight leading-[0.95] mb-6">NEURAL OS</h1>
+      <p class="max-w-3xl text-lg md:text-xl text-on-surface-variant">Бъдещето на автономното управление на процеси</p>
+      <a href="projects.html" class="inline-flex mt-10 items-center gap-3 bg-[#00E5FF] text-[#101319] px-7 py-3 rounded-full font-headline font-bold hover:shadow-[0_0_24px_rgba(0,229,255,0.42)] transition-all">
+        <span class="material-symbols-outlined text-base">arrow_back</span>
+        Обратно към Проекти
+      </a>
+    </div>
+  </header>
+
+  <main class="px-6 pb-24">
+    <section class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <article class="lg:col-span-8 rounded-3xl border border-outline-variant/20 bg-surface-container-low/80 backdrop-blur-md p-8 md:p-10">
+        <h2 class="text-3xl md:text-4xl font-headline font-bold text-[#00E5FF] mb-6">NEURAL OS: Бъдещето на автономното управление на процеси</h2>
+        <p class="text-on-surface-variant leading-8 mb-6">Neural OS не е просто софтуерен инструмент, а цялостна архитектура от ново поколение. Тя функционира като "централна нервна система" за вашия бизнес, която обединява разпокъсаните данни и процеси в единна, самообучаваща се екосистема. Чрез използването на усъвършенствани невронни мрежи, системата преминава от реактивно към проактивно управление.</p>
+
+        <h3 class="text-2xl font-headline font-bold text-[#00E5FF] mb-4">Основни стълбове на екосистемата</h3>
+        <div class="space-y-5 text-on-surface-variant leading-8">
+          <p><span class="text-on-surface font-semibold">Динамична когнитивна автоматизация:</span> За разлика от стандартните алгоритми, Neural OS анализира контекста на всяка задача и взема решения в реално време, елиминирайки нуждата от ръчна намеса при повтарящи се операции.</p>
+          <p><span class="text-on-surface font-semibold">Predictive Analytics (Предсказващ анализ):</span> Използваме дълбоко машинно обучение (Deep Learning), за да идентифицираме пазарни трендове и потенциални тесни места в работния процес, преди те да са се появили.</p>
+          <p><span class="text-on-surface font-semibold">Adaptive Resource Allocation:</span> Системата автоматично оптимизира разпределението на изчислителна мощ, човешки ресурс и бюджет, спрямо моментните приоритети на компанията.</p>
+        </div>
+      </article>
+
+      <aside class="lg:col-span-4 rounded-3xl border border-outline-variant/20 bg-surface-container-low/80 backdrop-blur-md p-8 h-fit sticky top-28">
+        <span class="text-xs tracking-[0.25em] uppercase text-[#00E5FF]">Performance Snapshot</span>
+        <div class="mt-8 space-y-5">
+          <div class="rounded-2xl border border-[#00E5FF]/20 bg-[#00E5FF]/7 p-5">
+            <p class="text-4xl font-headline font-bold text-[#00E5FF]">40%</p>
+            <p class="text-sm text-on-surface-variant mt-2">По-ниски оперативни разходи</p>
+          </div>
+          <div class="rounded-2xl border border-[#00E5FF]/20 bg-[#00E5FF]/7 p-5">
+            <p class="text-4xl font-headline font-bold text-[#00E5FF]">24/7</p>
+            <p class="text-sm text-on-surface-variant mt-2">Самообучаващ се анализ и мониторинг</p>
+          </div>
+          <div class="rounded-2xl border border-[#00E5FF]/20 bg-[#00E5FF]/7 p-5">
+            <p class="text-4xl font-headline font-bold text-[#00E5FF]">N+1</p>
+            <p class="text-sm text-on-surface-variant mt-2">Сигурност с откриване на аномалии в реално време</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="max-w-6xl mx-auto mt-8 rounded-3xl border border-outline-variant/20 bg-surface-container-low/80 backdrop-blur-md p-8 md:p-10">
+      <h2 class="text-3xl md:text-4xl font-headline font-bold text-[#00E5FF] mb-6">Как Neural OS трансформира вашия бизнес?</h2>
+      <div class="space-y-5 text-on-surface-variant leading-8">
+        <p><span class="text-on-surface font-semibold">Интелигентно самообучение:</span> С всеки изминал цикъл системата става по-ефективна, усвоявайки спецификите на вашата ниша и корпоративна култура.</p>
+        <p><span class="text-on-surface font-semibold">Оптимизация на разходите:</span> Намалява оперативните разходи с до 40% чрез идентифициране и премахване на неефективни процеси.</p>
+        <p><span class="text-on-surface font-semibold">Сигурност от следващо ниво:</span> Вградени модели за откриване на аномалии защитават вашите данни, като разпознават нестандартно поведение в мрежата мигновено.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-surface-container-high py-10 text-center text-on-surface-variant text-sm">
+    <p>&copy; 2026 Дигиталният Архитект. Всички права запазени.</p>
+  </footer>
+
+  <script type="module" src="./js/three-background.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
