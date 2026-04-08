@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script src="./tailwind.config.js"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  
+  <title>Услуги | Дигиталният Архитект</title>
+</head>
+<body class="antialiased overflow-x-hidden bg-background text-on-surface">
+  <!-- TopAppBar / Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#101319]/60 no-border tonal-shift-surface-container-low shadow-[0_8px_32px_rgba(0,229,255,0.05)]">
+    <div class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#00E5FF]" data-icon="architecture">architecture</span>
+          <span class="text-xl font-bold tracking-tighter text-[#c3f5ff] font-['Space_Grotesk']">Дигиталният Архитект</span>
+        </a>
+      </div>
+      <div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] font-bold tracking-tight" data-desktop-nav>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html">Начало</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="projects.html">Проекти</a>
+        <a class="text-[#00E5FF] font-bold transition-colors duration-300" href="services.html">Услуги</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html#contact">Контакти</a>
+      </div>
+      <button class="md:hidden material-symbols-outlined text-[#00E5FF] scale-95 duration-200 ease-in-out" data-icon="menu" data-mobile-menu-button aria-label="Отвори меню" aria-expanded="false" type="button">menu</button>
+    </div>
+  </nav>
+
+  <!-- Services Hero Section -->
+  <header class="relative pt-32 pb-20 px-6 overflow-hidden border-b border-surface-container-high/50">
+    <div class="absolute inset-0 z-0 opacity-40">
+      <div class="absolute top-10 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary-container/10 rounded-full blur-[100px]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center mt-12">
+      <span class="inline-block py-2 px-6 rounded-full bg-surface-container-high text-[#00E5FF] font-label text-xs tracking-[0.3em] uppercase mb-8 border border-[#00E5FF]/10">Експертиза на най-високо ниво</span>
+      <h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter text-on-surface mb-6">
+        Нашите <span class="text-primary-container">Услуги</span>
+      </h1>
+      <p class="max-w-3xl text-lg text-on-surface-variant font-light mb-12">
+        Предоставяме цялостни дигитални решения, които трансформират бизнеса. От концептуалния брандинг до сложните AI архитектури.
+      </p>
+    </div>
+  </header>
+
+  <!-- Services Detailed Section -->
+  <section class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="flex flex-col gap-24">
+      
+      <!-- Logo Design & Branding -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 group relative rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rer3NJB7uGqzaQI1oT8ooMRzsY5L_UqyHl1aSssDyQ8NXZaAEIDmmzlnjJDOD9E0EWO1F641VgJcFcgW_Or4TTtqa9jazN-KU7t7L0lOrbomZhg_COmumQhxp9awDvI_SiGOJx4UGLTm0m5j1OnQSBTIX6kuCUmxARQRbBpXviQma_NAP9XB7xx9xiHTFD-aXLa2xDtVOwSNqkdIXZKOo-5-94OSFjbVCgseniM9Ttc73frzFgg_K5X1yfzw6BDnw3w93OYDxbE');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
+          <div class="absolute top-6 left-6">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Logo Design</span>
+          </div>
+          <div class="relative h-full p-10 flex flex-col justify-end z-10">
+             <h4 class="text-2xl font-bold font-headline mb-4 text-on-surface">Визуална идентичност, която комуникира стойност.</h4>
+             <ul class="space-y-4 text-on-surface text-sm">
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Концептуален Лого Дизайн</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Създаване на Brand Book</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Типография & Цветови схеми</li>
+             </ul>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="p-4 bg-surface-container-high rounded-2xl text-primary-container">
+              <span class="material-symbols-outlined text-3xl">brush</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Лого Дизайн & Брандинг</h2>
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            Изграждаме силни и запомнящи се брандове. Вярваме, че доброто лого не е просто красива картинка, а стратегически инструмент, който разказва историята на вашия бизнес и създава доверие у вашата аудитория.
+          </p>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 text-primary-container font-headline font-bold uppercase tracking-wider text-sm hover:gap-4 transition-all">
+            Поискай оферта <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Modern Web Development -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="p-4 bg-surface-container-high rounded-2xl text-primary-container">
+              <span class="material-symbols-outlined text-3xl">code_blocks</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Модерна Уеб Разработка</h2>
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            Създаваме високопроизводителни уеб приложения с последно поколение технологии (React, Node.js, TypeScript). Изграждаме модулна архитектура, оптимизирана за скорост, SEO и безупречно потребителско изживяване (UX/UI).
+          </p>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 text-primary-container font-headline font-bold uppercase tracking-wider text-sm hover:gap-4 transition-all">
+            Поискай оферта <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOpZqTlUM5apXU9cl1LzeQr6xUC4gaLe4W-gVKU0mfzm_ZXpeUM6F520Ev6aFC6gN93n7cV4vDpUZXPSN28PoBHHKbV__IeblSLreioG5ywfnXtVlT2kDhjprXg4RW07STf6jygcXHXbEfFeUlQrMvAecLGLUo8X4rKPdZcKic5vX_BiwwUYavrMYW9sWmHalPXa8B-wpp89XMJZfkXx_yekYctbMjy93Jcn8UYvxFbhUCp6doCECBVTah0m3Vco2wdtYeLlEMaPY');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
+          <div class="absolute top-6 right-6">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Web Dev</span>
+          </div>
+          <div class="relative h-full p-10 flex flex-col justify-end z-10">
+             <h4 class="text-2xl font-bold font-headline mb-4 text-on-surface">Технологии от утрешния ден.</h4>
+             <ul class="space-y-4 text-on-surface text-sm">
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Custom Фронтенд (React, Vue, Tailwind)</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Сигурен & Мащабируем Бекенд (Node.js)</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> E-Commerce & CMS решения</li>
+             </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Integration -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 group relative rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZpF63PTkwXIUH3WuMMKYINWGanCxGthJAGuxQ1KabH0hYn9OINh9RVa76beFKioJmUWX61uh6hQHxAy6BC6GwUL6w_38-Y7RXUD2Zyhnlb4Erizjgs5a_StnJfBXolwbkJVWeSwxgUHLXUdyr6k2tnY0QqkiWRdrSKRnLJp813vTJyjDG2HSXihXNUcHxCGhLPwH8Ngead1cgW0bcEXME4vh_c08WE9-rAgusgWcRlEdvxc4QJnM-xZPdlWquOttcJFw43EQPxDI');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
+          <div class="absolute top-6 left-6">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">AI Integration</span>
+          </div>
+          <div class="relative h-full p-10 flex flex-col justify-end z-10">
+             <h4 class="text-2xl font-bold font-headline mb-4 text-on-surface">Интелигентни системи за автоматизация.</h4>
+             <ul class="space-y-4 text-on-surface text-sm">
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Custom ChatGPT / LLM Интеграции</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> AI Чатботове за обслужване</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Автоматизация на бизнес процеси</li>
+             </ul>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="p-4 bg-surface-container-high rounded-2xl text-primary-container">
+              <span class="material-symbols-outlined text-3xl">psychology</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Интеграция на AI</h2>
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            Изпреварете конкуренцията чрез внедряване на изкуствен интелект. Интегрираме модерни AI модели във вашите уеб платформи, за да автоматизираме задачи, да подобрим анализа на данни и да предложим персонализирано изживяване.
+          </p>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 text-primary-container font-headline font-bold uppercase tracking-wider text-sm hover:gap-4 transition-all">
+            Поискай оферта <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="p-4 bg-surface-container-high rounded-2xl text-primary-container">
+              <span class="material-symbols-outlined text-3xl">show_chart</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Дигитален Маркетинг</h2>
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            Превръщаме вашия уебсайт в мощна машина за продажби. Развиваме цялостни маркетингови стратегии, базирани на данни, за да достигнете до правилната аудитория в точния момент.
+          </p>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 text-primary-container font-headline font-bold uppercase tracking-wider text-sm hover:gap-4 transition-all">
+            Поискай оферта <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL9od4hJdzpl2yIGQinSVaMPliSt-jy3RxxMdvjSqPxYK7lUpSn3QYqon20Hypgaa63gJAJyGcR-MmGQYtSWldGoxji_GoWCkzbHMRb3gz0eNTmBrD1aJYHgOBQ7181KWBWPOqjsiEUA1WUeslop4T-J3D8E0OU6n5IBhH7IDlw_noz3osT4kJvTnUR_0LqFS-WgVfgZ9F_bRxfHz9woCDnoos6lRUV_yFFN1GCqR9Av4wgcly4ir5PF-gRq5rpL_0tBxxPkJYv7E');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
+          <div class="absolute top-6 right-6">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Marketing</span>
+          </div>
+          <div class="relative h-full p-10 flex flex-col justify-end z-10">
+             <h4 class="text-2xl font-bold font-headline mb-4 text-on-surface">Видимост, която носи резултати.</h4>
+             <ul class="space-y-4 text-on-surface text-sm">
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> SEO Оптимизация (On-page & Off-page)</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Performance Маркетинг (Google & Meta Ads)</li>
+               <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Анализ & Conversion Rate Optimization</li>
+             </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process / Tech Stack -->
+  <section class="py-24 bg-surface-container-lowest mt-16 border-t border-surface-container-high/50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-headline font-bold text-on-surface mb-16">Нашият Технологичен Стек</h3>
+      <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+        <!-- Тъй като използваме само шрифтове и икони, тук поставяме стилизирани текстове за технологиите -->
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">TypeScript</span>
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">React</span>
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">Node.js</span>
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">Tailwind CSS</span>
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">Vite</span>
+        <span class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface-variant hover:text-primary-container transition-colors cursor-default">OpenAI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[150px]"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Имате идея за проект?</h2>
+      <p class="text-on-surface-variant text-lg mb-10">Свържете се с нас и нека обсъдим как нашите услуги могат да помогнат за развитието на вашия бизнес.</p>
+      <a href="index.html#contact" class="inline-block bg-primary-container text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] transition-all">ЗАПОЧНЕТЕ СЕГА</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-surface-container-high py-12 text-center text-on-surface-variant text-sm">
+    <div class="flex items-center justify-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-[#00E5FF] text-xl" data-icon="architecture">architecture</span>
+        <span class="font-bold  text-lg text-[#c3f5ff] font-['Space_Grotesk']">Дигиталният Архитект</span>
+    </div>
+    <p>&copy; 2024 Дигиталният Архитект. Всички права запазени.</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

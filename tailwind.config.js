@@ -1,0 +1,72 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "tertiary": "#ffeac0",
+        "surface-tint": "#00daf3",
+        "outline-variant": "#3b494c",
+        "on-surface": "#e1e2ea",
+        "surface-container-highest": "#32353b",
+        "on-error": "#690005",
+        "on-secondary": "#00363d",
+        "on-primary-fixed": "#001f24",
+        "tertiary-fixed": "#ffdf96",
+        "surface": "#101319",
+        "secondary-fixed": "#b3ecf7",
+        "inverse-on-surface": "#2d3037",
+        "on-tertiary-fixed": "#251a00",
+        "surface-container": "#1d2026",
+        "secondary": "#98d0da",
+        "on-secondary-container": "#8ac1cc",
+        "surface-container-low": "#191c22",
+        "secondary-fixed-dim": "#98d0da",
+        "surface-variant": "#32353b",
+        "on-secondary-fixed": "#001f24",
+        "on-background": "#e1e2ea",
+        "inverse-primary": "#006875",
+        "surface-container-lowest": "#0b0e14",
+        "on-tertiary": "#3e2e00",
+        "primary": "#c3f5ff",
+        "on-surface-variant": "#bac9cc",
+        "on-secondary-fixed-variant": "#0d4e57",
+        "on-tertiary-container": "#6f5500",
+        "on-primary-fixed-variant": "#004f58",
+        "primary-fixed-dim": "#00daf3",
+        "primary-container": "#00e5ff",
+        "surface-dim": "#101319",
+        "tertiary-fixed-dim": "#f3bf26",
+        "on-primary": "#00363d",
+        "on-tertiary-fixed-variant": "#594400",
+        "secondary-container": "#11505a",
+        "inverse-surface": "#e1e2ea",
+        "surface-bright": "#363940",
+        "background": "#101319",
+        "outline": "#849396",
+        "on-primary-container": "#00626e",
+        "error": "#ffb4ab",
+        "surface-container-high": "#272a30",
+        "tertiary-container": "#fec931",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "primary-fixed": "#9cf0ff"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Space Grotesk"],
+        "body": ["Manrope"],
+        "label": ["Manrope"]
+      }
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries'),
+  ],
+}

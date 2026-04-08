@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="dark" lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script src="./tailwind.config.js"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  
+  <title>Проекти | Дигиталният Архитект</title>
+</head>
+<body class="antialiased overflow-x-hidden bg-background text-on-surface">
+  <!-- TopAppBar / Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#101319]/60 no-border tonal-shift-surface-container-low shadow-[0_8px_32px_rgba(0,229,255,0.05)]">
+    <div class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#00E5FF]" data-icon="architecture">architecture</span>
+          <span class="text-xl font-bold tracking-tighter text-[#c3f5ff] font-['Space_Grotesk']">Дигиталният Архитект</span>
+        </a>
+      </div>
+      <div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] font-bold tracking-tight" data-desktop-nav>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html">Начало</a>
+        <a class="text-[#00E5FF] font-bold transition-colors duration-300" href="projects.html">Проекти</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="services.html">Услуги</a>
+        <a class="text-[#e1e2ea]/70 hover:text-[#00E5FF] transition-colors duration-300" href="index.html#contact">Контакти</a>
+      </div>
+      <button class="md:hidden material-symbols-outlined text-[#00E5FF] scale-95 duration-200 ease-in-out" data-icon="menu" data-mobile-menu-button aria-label="Отвори меню" aria-expanded="false" type="button">menu</button>
+    </div>
+  </nav>
+
+  <!-- Projects Hero Section -->
+  <header class="relative pt-32 pb-16 px-6 overflow-hidden border-b border-surface-container-high/50">
+    <div class="absolute inset-0 z-0 opacity-40">
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center mt-12">
+      <h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter text-on-surface mb-6">
+        Нашето <span class="text-primary-container">Портфолио</span>
+      </h1>
+      <p class="max-w-3xl text-lg text-on-surface-variant font-light mb-12">
+        Разгледайте пълния ни архив от иновативни решения. Всеки проект е доказателство за нашата отдаденост към съвършенството в уеб разработката, дизайна и интеграцията на изкуствен интелект.
+      </p>
+      
+      <!-- Filter Tags -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <button class="px-6 py-2 rounded-full bg-primary-container text-on-primary font-bold text-sm transition-all shadow-[0_0_15px_rgba(0,229,255,0.2)]">Всички</button>
+        <button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary-container hover:text-primary-container transition-all text-sm font-semibold">Уеб Разработка</button>
+        <button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary-container hover:text-primary-container transition-all text-sm font-semibold">Лого Дизайн</button>
+        <button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary-container hover:text-primary-container transition-all text-sm font-semibold">AI Интеграции</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Grid -->
+  <section class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZpF63PTkwXIUH3WuMMKYINWGanCxGthJAGuxQ1KabH0hYn9OINh9RVa76beFKioJmUWX61uh6hQHxAy6BC6GwUL6w_38-Y7RXUD2Zyhnlb4Erizjgs5a_StnJfBXolwbkJVWeSwxgUHLXUdyr6k2tnY0QqkiWRdrSKRnLJp813vTJyjDG2HSXihXNUcHxCGhLPwH8Ngead1cgW0bcEXME4vh_c08WE9-rAgusgWcRlEdvxc4QJnM-xZPdlWquOttcJFw43EQPxDI');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">AI Integration</span>
+          </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">NEURAL_OS</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Интелигентна операционна екосистема, базирана на невронни мрежи за оптимизация на бизнес процеси в реално време.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">React, Python, Tensor</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOpZqTlUM5apXU9cl1LzeQr6xUC4gaLe4W-gVKU0mfzm_ZXpeUM6F520Ev6aFC6gN93n7cV4vDpUZXPSN28PoBHHKbV__IeblSLreioG5ywfnXtVlT2kDhjprXg4RW07STf6jygcXHXbEfFeUlQrMvAecLGLUo8X4rKPdZcKic5vX_BiwwUYavrMYW9sWmHalPXa8B-wpp89XMJZfkXx_yekYctbMjy93Jcn8UYvxFbhUCp6doCECBVTah0m3Vco2wdtYeLlEMaPY');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Web Dev</span>
+          </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">CYBER_VAULT</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Ултра-сигурна уеб платформа за управление на дигитални активи и криптирани данни със специализиран UI.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">Vue, Node.js, WebGL</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rer3NJB7uGqzaQI1oT8ooMRzsY5L_UqyHl1aSssDyQ8NXZaAEIDmmzlnjJDOD9E0EWO1F641VgJcFcgW_Or4TTtqa9jazN-KU7t7L0lOrbomZhg_COmumQhxp9awDvI_SiGOJx4UGLTm0m5j1OnQSBTIX6kuCUmxARQRbBpXviQma_NAP9XB7xx9xiHTFD-aXLa2xDtVOwSNqkdIXZKOo-5-94OSFjbVCgseniM9Ttc73frzFgg_K5X1yfzw6BDnw3w93OYDxbE');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Logo Design</span>
+          </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">LUMINA BRANDING</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Визуална идентичност за енергийна компания от ново поколение, фокусирана върху светлината и чистотата.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">Illustrator, Figma</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Additional Projects... -->
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative bg-surface-container-high/50 flex items-center justify-center">
+            <span class="material-symbols-outlined text-6xl text-on-surface-variant/30 group-hover:text-primary-container/50 transition-colors">shopping_bag</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+            <div class="absolute top-4 left-4">
+                <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">E-Commerce</span>
+            </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">AURA MARKET</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Уникално модерно изживяване за онлайн пазаруване с 3D визуализации на продукти.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">Next.js, Tailwind, Three.js</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative bg-surface-container-high/50 flex items-center justify-center">
+            <span class="material-symbols-outlined text-6xl text-on-surface-variant/30 group-hover:text-primary-container/50 transition-colors">campaign</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+            <div class="absolute top-4 left-4">
+                <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">Marketing</span>
+            </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">ZENITH STRATEGY</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Цялостна 360-градусова дигитална маркетингова кампания за водещ финтех стартъп.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">SEO, Ads, Analytics</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary-container/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col">
+        <div class="h-64 overflow-hidden relative bg-surface-container-high/50 flex items-center justify-center">
+            <span class="material-symbols-outlined text-6xl text-on-surface-variant/30 group-hover:text-primary-container/50 transition-colors">robot_2</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+            <div class="absolute top-4 left-4">
+                <span class="bg-surface/80 backdrop-blur-md text-[#00E5FF] px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">AI Integration</span>
+            </div>
+        </div>
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary-container transition-colors">SYNTAX BOT</h3>
+          <p class="text-on-surface-variant text-sm mb-6 flex-1 line-clamp-3">Индивидуално обучен LLM асистент, интегриран в системата за обслужване на клиенти.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4 mt-auto">
+            <span class="text-xs text-on-surface-variant/70 font-medium">OpenAI, TypeScript, Vercel</span>
+            <a href="#" class="flex items-center gap-2 text-primary-container text-sm font-bold group/btn">
+              <span>Виж повече</span>
+              <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Pagination / View More -->
+    <div class="mt-16 text-center">
+      <button class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-headline font-bold text-lg border border-primary-container/50 hover:bg-primary-container hover:text-on-primary transition-all group">
+        Зареди Още 
+        <span class="material-symbols-outlined group-hover:animate-bounce">expand_more</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="border-t border-surface-container-high/50 py-24 bg-surface-container-lowest relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Готови ли сте за следващия си голям проект?</h2>
+      <p class="text-on-surface-variant text-lg mb-10">Трансформирайте вашите идеи в дигитална реалност. Нека работим заедно.</p>
+      <a href="index.html#contact" class="inline-block bg-primary-container text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] transition-all">СВЪРЖЕТЕ СЕ С НАС</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-surface-container-high py-12 text-center text-on-surface-variant text-sm">
+    <div class="flex items-center justify-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-[#00E5FF] text-xl" data-icon="architecture">architecture</span>
+        <span class="font-bold  text-lg text-[#c3f5ff] font-['Space_Grotesk']">Дигиталният Архитект</span>
+    </div>
+    <p>&copy; 2024 Дигиталният Архитект. Всички права запазени.</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
