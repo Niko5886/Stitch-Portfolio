@@ -151,44 +151,90 @@
     </div>
   </section>
 
-  <!-- Contact Form Section -->
-  <section class="py-32 px-6" id="contact">
-    <div class="contact-form-shell mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="contact-form-title">ФОРМА ЗА ЗАПИТВАНЕ</h2>
-        <p class="contact-form-subtitle">Да започнем изграждането на вашия нов дигитален проект още днес.</p>
+  <!-- Contact Hub Section -->
+  <section class="pt-24 pb-0 px-6" id="contact">
+    <div class="contact-hub-shell mx-auto">
+      <div class="text-center mb-14">
+        <span class="inline-block py-2 px-5 rounded-full bg-[#171b21]/95 text-[#00E5FF] font-label text-xs tracking-[0.25em] uppercase mb-7 border border-[#00E5FF]/12">Контакти</span>
+        <h2 class="contact-form-title">Нека Говорим за Вашия Следващ Проект</h2>
+        <p class="contact-form-subtitle">Споделете целите си с нас. Ще получите структура, времева рамка и реален план за изпълнение.</p>
       </div>
-      <form class="contact-form">
-        <div class="contact-form-grid">
-          <div class="contact-field">
-            <label class="contact-label" for="contact-name">ИМЕ</label>
-            <input class="contact-input" id="contact-name" placeholder="Вашето име" type="text" />
-          </div>
-          <div class="contact-field">
-            <label class="contact-label" for="contact-email">ИМЕЙЛ</label>
-            <input class="contact-input" id="contact-email" placeholder="email@example.com" type="email" />
-          </div>
-        </div>
-        <div class="contact-field">
-          <label class="contact-label" for="contact-project">ПРОЕКТ</label>
-          <select class="contact-input contact-select" id="contact-project" aria-label="Изберете тип проект">
-            <option>Уеб Разработка</option>
-            <option>Изработка на Лого &amp; Дизайн</option>
-            <option>AI Интеграция</option>
-            <option>Друго</option>
-          </select>
-        </div>
-        <div class="contact-field">
-          <label class="contact-label" for="contact-message">СЪОБЩЕНИЕ</label>
-          <textarea class="contact-input contact-textarea" id="contact-message" placeholder="Опишете вашата визия..." rows="5"></textarea>
-        </div>
-        <button class="contact-submit" type="submit">ИЗПРАТИ ЗАПИТВАНЕ</button>
-      </form>
+
+      <div class="contact-hub-grid">
+        <article class="contact-info-panel" aria-labelledby="contact-direct-title">
+          <h3 class="contact-hub-title" id="contact-direct-title">Директни Канали</h3>
+          <ul class="contact-detail-list" role="list">
+            <li>
+              <span class="contact-detail-label">Имейл</span>
+              <a class="contact-detail-value" href="mailto:hello@webarhitect.studio">hello@webarhitect.studio</a>
+            </li>
+            <li>
+              <span class="contact-detail-label">Телефон</span>
+              <a class="contact-detail-value" href="tel:+359877123456">+359 877 123 456</a>
+            </li>
+            <li>
+              <span class="contact-detail-label">Локация</span>
+              <p class="contact-detail-value">София, България</p>
+            </li>
+            <li>
+              <span class="contact-detail-label">Работно Време</span>
+              <p class="contact-detail-value">Пон - Пет, 09:00 - 18:30</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="contact-cta-panel" aria-labelledby="contact-cta-title">
+          <h3 class="contact-hub-title" id="contact-cta-title">Бърз Старт</h3>
+          <p class="contact-cta-text">Изпратете ни кратко запитване и ще се свържем с вас до 24 часа с конкретни следващи стъпки.</p>
+          <button class="contact-open-button" data-contact-open type="button">Свържи се с нас</button>
+        </article>
+      </div>
     </div>
   </section>
 
+  <!-- Contact Modal -->
+  <div class="contact-modal" data-contact-modal aria-hidden="true">
+    <div class="contact-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <button class="contact-modal-close" data-contact-close type="button" aria-label="Затвори формата">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="contact-form-shell mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="contact-form-title" id="contact-modal-title">Форма за Запитване</h2>
+          <p class="contact-form-subtitle">Опишете накратко проекта и ще ви върнем ясен план за действие.</p>
+        </div>
+        <form class="contact-form" novalidate>
+          <div class="contact-form-grid">
+            <div class="contact-field">
+              <label class="contact-label" for="contact-name">Име</label>
+              <input class="contact-input" id="contact-name" placeholder="Вашето име" type="text" />
+            </div>
+            <div class="contact-field">
+              <label class="contact-label" for="contact-email">Имейл</label>
+              <input class="contact-input" id="contact-email" placeholder="email@example.com" type="email" />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="contact-project">Проект</label>
+            <select class="contact-input contact-select" id="contact-project" aria-label="Изберете тип проект">
+              <option>Уеб Разработка</option>
+              <option>Изработка на Лого &amp; Дизайн</option>
+              <option>AI Интеграция</option>
+              <option>Друго</option>
+            </select>
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="contact-message">Съобщение</label>
+            <textarea class="contact-input contact-textarea" id="contact-message" placeholder="Опишете вашата визия..." rows="5"></textarea>
+          </div>
+          <button class="contact-submit" type="submit">Изпрати Запитване</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="w-full rounded-t-[3rem] mt-20 bg-[#101319] dark:bg-[#101319] tonal-shift bg-[#191c22]">
+  <footer class="w-full rounded-t-[3rem] mt-0 bg-[#101319] dark:bg-[#101319] tonal-shift bg-[#191c22]">
     <div class="w-full px-10 py-12 flex flex-col items-center gap-6 border-t border-[#c3f5ff]/5">
       <div class="flex items-center gap-2 mb-4">
         <span class="font-['Space_Grotesk'] font-bold text-[#00E5FF] text-2xl tracking-tighter">Дигитален Архитект</span>

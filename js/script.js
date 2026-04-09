@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initMobileMenu();
   initScrollSpy();
   initSmoothScroll();
+  initContactModal();
   initFormHandler();
   initRevealAnimation();
 });
@@ -206,7 +207,7 @@ function initScrollSpy() {
 }
 
 function initFormHandler() {
-  const form = document.querySelector('form');
+  const form = document.querySelector('.contact-form');
   if (!form) {
     return;
   }
@@ -240,6 +241,50 @@ function initFormHandler() {
     console.log('Форма изпратена:', formData);
     alert('Благодаря! Вашето запитване е получено. Скоро ще се свържем с вас.');
     form.reset();
+
+    const modal = document.querySelector('[data-contact-modal]');
+    if (modal) {
+      document.body.classList.remove('contact-modal-open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+}
+
+function initContactModal() {
+  const modal = document.querySelector('[data-contact-modal]');
+  const openButtons = document.querySelectorAll('[data-contact-open]');
+  const closeButton = document.querySelector('[data-contact-close]');
+
+  if (!modal || !openButtons.length || !closeButton) {
+    return;
+  }
+
+  function openModal() {
+    document.body.classList.add('contact-modal-open');
+    modal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeModal() {
+    document.body.classList.remove('contact-modal-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  openButtons.forEach(function(button) {
+    button.addEventListener('click', openModal);
+  });
+
+  closeButton.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && document.body.classList.contains('contact-modal-open')) {
+      closeModal();
+    }
   });
 }
 

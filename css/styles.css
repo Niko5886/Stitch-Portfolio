@@ -17,7 +17,9 @@ body::before {
   z-index: -2;
 }
 
-body > *:not(.site-3d-bg) {
+body > header,
+body > section,
+body > footer {
   position: relative;
   z-index: 1;
 }
@@ -103,6 +105,165 @@ body.three-bg-fallback::after {
 
 .contact-form-shell {
   max-width: 960px;
+}
+
+.contact-hub-shell {
+  max-width: 1120px;
+}
+
+.contact-hub-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.contact-info-panel,
+.contact-cta-panel {
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 229, 255, 0.1);
+  background: linear-gradient(165deg, rgba(17, 22, 30, 0.86), rgba(11, 15, 21, 0.96));
+  box-shadow: 0 28px 70px rgba(3, 8, 14, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.contact-info-panel {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.contact-cta-panel {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.contact-hub-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.35rem, 1.1rem + 0.8vw, 1.9rem);
+  font-weight: 700;
+  color: #e8f6ff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.contact-detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-detail-list li {
+  border: 1px solid rgba(132, 147, 150, 0.22);
+  background: rgba(20, 26, 35, 0.7);
+  border-radius: 1.15rem;
+  padding: 1rem 1.1rem;
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.contact-detail-label {
+  color: rgba(153, 186, 194, 0.74);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.contact-detail-value {
+  color: #e5eef2;
+  font-size: 1.03rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+a.contact-detail-value:hover,
+a.contact-detail-value:focus-visible {
+  color: #00e5ff;
+}
+
+.contact-cta-text {
+  color: #bfced4;
+  line-height: 1.72;
+  font-size: 1.06rem;
+}
+
+.contact-open-button {
+  width: 100%;
+  min-height: 68px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #22eeff 0%, #00e5ff 100%);
+  color: #101319;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 229, 255, 0.48);
+  box-shadow: 0 18px 40px rgba(0, 229, 255, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-open-button:hover,
+.contact-open-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 52px rgba(0, 229, 255, 0.34), 0 0 0 4px rgba(0, 229, 255, 0.12);
+}
+
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: rgba(5, 8, 13, 0.72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease;
+}
+
+.contact-modal-dialog {
+  width: min(100%, 1020px);
+  max-height: 92dvh;
+  overflow-y: auto;
+  border-radius: 2.25rem;
+  border: 1px solid rgba(0, 229, 255, 0.14);
+  background: linear-gradient(180deg, rgba(13, 18, 25, 0.98), rgba(8, 12, 18, 0.98));
+  box-shadow: 0 38px 120px rgba(0, 0, 0, 0.55);
+  padding: clamp(1rem, 2.5vw, 1.8rem);
+  position: relative;
+}
+
+.contact-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 229, 255, 0.28);
+  background: rgba(16, 19, 25, 0.66);
+  color: #00e5ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.contact-modal-open {
+  overflow: hidden;
+}
+
+body.contact-modal-open .contact-modal {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .contact-form-title {
@@ -237,6 +398,14 @@ select.contact-input {
 }
 
 @media (max-width: 767px) {
+  .contact-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-detail-list {
+    grid-template-columns: 1fr;
+  }
+
   .contact-form-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -245,6 +414,11 @@ select.contact-input {
   .contact-form {
     border-radius: 2rem;
     padding: 1.25rem;
+  }
+
+  .contact-modal-dialog {
+    border-radius: 1.35rem;
+    max-height: 95dvh;
   }
 
   .contact-input {
